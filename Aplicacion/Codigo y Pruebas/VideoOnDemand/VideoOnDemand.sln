@@ -7,9 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{913CF102-8
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{8A519D03-0CE8-4680-B42B-8CF8FC53744F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoOnDemand.Data", "VideoOnDemand.Data\VideoOnDemand.Data.csproj", "{B87E7B38-64B9-459D-914D-A3996A958640}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoOnDemand.Web", "VideoOnDemand.Web\VideoOnDemand.Web.csproj", "{EFDF1062-5E20-4212-AA3D-7E385902769B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoOnDemand.Data", "VideoOnDemand.Data\VideoOnDemand.Data.csproj", "{B87E7B38-64B9-459D-914D-A3996A958640}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,20 +17,20 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B87E7B38-64B9-459D-914D-A3996A958640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B87E7B38-64B9-459D-914D-A3996A958640}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B87E7B38-64B9-459D-914D-A3996A958640}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B87E7B38-64B9-459D-914D-A3996A958640}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EFDF1062-5E20-4212-AA3D-7E385902769B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EFDF1062-5E20-4212-AA3D-7E385902769B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFDF1062-5E20-4212-AA3D-7E385902769B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFDF1062-5E20-4212-AA3D-7E385902769B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B87E7B38-64B9-459D-914D-A3996A958640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B87E7B38-64B9-459D-914D-A3996A958640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B87E7B38-64B9-459D-914D-A3996A958640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B87E7B38-64B9-459D-914D-A3996A958640}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{B87E7B38-64B9-459D-914D-A3996A958640} = {913CF102-8DB8-45A4-AD70-ACBA50591B2C}
 		{EFDF1062-5E20-4212-AA3D-7E385902769B} = {8A519D03-0CE8-4680-B42B-8CF8FC53744F}
+		{B87E7B38-64B9-459D-914D-A3996A958640} = {913CF102-8DB8-45A4-AD70-ACBA50591B2C}
 	EndGlobalSection
 EndGlobal
