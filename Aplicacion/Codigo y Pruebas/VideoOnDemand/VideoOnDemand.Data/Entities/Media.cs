@@ -18,5 +18,7 @@ namespace VideoOnDemand.Entities
 
         public ICollection<Genero> Generos { get; set; }
         public ICollection<Persona> Actores { get; set; }
+        public ICollection<Opinion> Opiniones { get; set; }
+        public EEstatusMedia? EstadosMedia { get; set; }
     }
 }
