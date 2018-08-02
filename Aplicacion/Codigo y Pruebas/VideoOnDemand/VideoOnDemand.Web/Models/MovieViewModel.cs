@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace VideoOnDemand.Entities
+namespace VideoOnDemand.Web.Models
 {
-    class Movie
+    public class MovieViewModel
     {
         public int? MediaId { get; set; }
         public string Nombre { get; set; }
@@ -14,9 +13,5 @@ namespace VideoOnDemand.Entities
         public int? DuracionMin { get; set; }
         public DateTime? FechaRegistro { get; set; }
         public DateTime? FechaLanzamiento { get; set; }
-        public bool Activo { get; set; }
-
-        public ICollection<Genero> Generos { get; set; }
-        public ICollection<Persona> Actores { get; set; }
     }
 }
