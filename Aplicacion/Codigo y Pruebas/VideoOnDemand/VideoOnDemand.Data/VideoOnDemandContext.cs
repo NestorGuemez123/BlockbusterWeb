@@ -34,6 +34,7 @@ namespace VideoOnDemand.Data
 
             #region MapeoGenero
             var genero = modelBuilder.Entity<Genero>();
+            genero.ToTable("Generos");
             genero.HasKey(i => i.GeneroId);
             genero.Property(i => i.GeneroId).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             genero.Property(i => i.Nombre).HasMaxLength(100).IsRequired();
@@ -73,6 +74,7 @@ namespace VideoOnDemand.Data
 
             #region MapeoFavorito
             var favorito = modelBuilder.Entity<Favorito>();
+            favorito.ToTable("Favoritos");
             favorito.HasKey(m => m.id);
             favorito.Property(m => m.id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             favorito.Property(m => m.FechaAgregado).IsRequired();
