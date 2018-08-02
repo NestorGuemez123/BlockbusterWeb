@@ -63,23 +63,6 @@
     <Compile Include="Entities\Persona.cs" />
     <Compile Include="Entities\Serie.cs" />
     <Compile Include="Entities\Usuario.cs" />
-    <Compile Include="Migrations\201808011625314_InitialCreate.cs" />
-    <Compile Include="Migrations\201808011625314_InitialCreate.Designer.cs">
-      <DependentUpon>201808011625314_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201808020351563_inicial.cs" />
-    <Compile Include="Migrations\201808020351563_inicial.Designer.cs">
-      <DependentUpon>201808020351563_inicial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201808020403373_Episodio_Serie.cs" />
-    <Compile Include="Migrations\201808020403373_Episodio_Serie.Designer.cs">
-      <DependentUpon>201808020403373_Episodio_Serie.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201808020414370_Episodio_Serie2.cs" />
-    <Compile Include="Migrations\201808020414370_Episodio_Serie2.Designer.cs">
-      <DependentUpon>201808020414370_Episodio_Serie2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BaseRepository.cs" />
     <Compile Include="Repositories\EpisodioRepository.cs" />
@@ -92,20 +75,6 @@
     <Compile Include="Repositories\SerieRepository.cs" />
     <Compile Include="Repositories\UsuarioRepository.cs" />
     <Compile Include="VideoOnDemandContext.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201808011625314_InitialCreate.resx">
-      <DependentUpon>201808011625314_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201808020351563_inicial.resx">
-      <DependentUpon>201808020351563_inicial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201808020403373_Episodio_Serie.resx">
-      <DependentUpon>201808020403373_Episodio_Serie.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201808020414370_Episodio_Serie2.resx">
-      <DependentUpon>201808020414370_Episodio_Serie2.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
