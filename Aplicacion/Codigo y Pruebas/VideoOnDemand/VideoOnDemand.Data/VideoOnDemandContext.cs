@@ -20,6 +20,8 @@ namespace VideoOnDemand.Data
         public DbSet<Media> Medias { get; set; }
         public DbSet<Genero> Generos { get; set; }
         public DbSet<Persona> Personas { get; set; }
+        public DbSet<Serie> Series { get; set; }
+        public DbSet<Episodio> Episodios { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -78,6 +80,25 @@ namespace VideoOnDemand.Data
             favorito.HasRequired(m => m.media).WithMany().HasForeignKey(m => m.mediaId);
             favorito.Property(m => m.usuarioId).IsRequired();
             favorito.HasRequired(m => m.usuario).WithMany().HasForeignKey(m => m.usuarioId);
+            #endregion
+
+            #region MapeoSerie
+            //La relacion 1-n con Episodio se mapeo en el mapeo de Episodio
+            var serie = modelBuilder.Entity<Serie>();
+            serie.HasKey(s => s.MediaId);
+            serie.ToTable("Series"); //Mapea la herencia desde Media, crea una tabla sola para Series
+            #endregion
+
+            #region MapeoEpisodio
+            //La relacion 1-n con Serie no se mapea aqui, en cambio se deja a EF hacerlo por las convenciones mediante el atributo
+            //Serie dentro de Episodio
+            var episodio = modelBuilder.Entity<Episodio>();
+            episodio.HasKey(e => e.MediaId);
+            episodio.HasRequired(e => e.Serie)
+                .WithMany()
+                .HasForeignKey(e => e.SerieId);
+            episodio.ToTable("Episodios"); //Mapea la herencia desde Media, crea una tabla sola para Episodios
+
             #endregion
         }
     }

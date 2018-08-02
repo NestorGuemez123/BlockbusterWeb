@@ -8,8 +8,11 @@ namespace VideoOnDemand.Entities
 {
     public class Episodio : Media
     {
-        public int Temporada { get; set; }
-        public int SerieId { get; set; }
+        public int? Temporada { get; set; }
 
+        #region Relaciones
+        public int? SerieId { get; set; }
+        public Serie Serie { get; set; }
+        #endregion
     }
 }
