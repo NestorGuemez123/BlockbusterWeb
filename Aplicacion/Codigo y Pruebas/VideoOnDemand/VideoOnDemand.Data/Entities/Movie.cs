@@ -17,6 +17,6 @@ namespace VideoOnDemand.Entities
         public bool Activo { get; set; }
 
         public ICollection<Genero> Generos { get; set; }
-        public ICollection<Persona> Actores { get; set; }
+        public ICollection<Persona> Actores { get; set;}
     }
 }
