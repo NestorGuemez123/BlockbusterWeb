@@ -330,7 +330,3 @@ ASALocalRun/
 .mfractor/
 Aplicacion/Codigo y Pruebas/VideoOnDemand/VideoOnDemand.Web/Web.config
 Aplicacion/Codigo y Pruebas/VideoOnDemand/VideoOnDemand.sln
-Aplicacion/Codigo y Pruebas/VideoOnDemand/VideoOnDemand.Data/App.config
-Aplicacion/Codigo y Pruebas/VideoOnDemand/VideoOnDemand.Data/packages.config
-Aplicacion/Codigo y Pruebas/VideoOnDemand/VideoOnDemand.Data/VideoOnDemand.Data.csproj
-Aplicacion/Codigo y Pruebas/VideoOnDemand/VideoOnDemand.Web/Web.config
