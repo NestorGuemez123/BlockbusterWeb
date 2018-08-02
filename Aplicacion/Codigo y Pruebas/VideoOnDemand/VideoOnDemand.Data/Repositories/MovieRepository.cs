@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VideoOnDemand.Data;
 using VideoOnDemand.Entities;
 
 namespace VideoOnDemand.Repositories
@@ -12,7 +13,7 @@ namespace VideoOnDemand.Repositories
     {
         public MovieRepository(VideoOnDemandContext context) : base(context)
         {
-
+             
         }
     }
 }
