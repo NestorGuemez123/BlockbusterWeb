@@ -60,6 +60,7 @@
     <Compile Include="Entities\Favorito.cs" />
     <Compile Include="Entities\Genero.cs" />
     <Compile Include="Entities\Media.cs" />
+    <Compile Include="Entities\Movie.cs" />
     <Compile Include="Entities\Opinion.cs" />
     <Compile Include="Entities\Persona.cs" />
     <Compile Include="Entities\Usuario.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="Repositories\FavoritoRepository.cs" />
     <Compile Include="Repositories\GeneroRepository.cs" />
     <Compile Include="Repositories\MediaRepository.cs" />
+    <Compile Include="Repositories\MovieRepository.cs" />
     <Compile Include="Repositories\OpinionRepository.cs" />
     <Compile Include="Repositories\PersonaRepository.cs" />
     <Compile Include="Repositories\UsuarioRepository.cs" />
